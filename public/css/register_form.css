@@ -1,0 +1,43 @@
+.cuerpo-register {
+    background-color: white;
+    border: 1px solid #ebebeb;
+}
+
+.formulario-register {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width:50%;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid #1259c3;
+    border-radius:10px;
+
+    background-color: #ebebeb;
+}
+
+.formulario-register input,fieldset {
+    border: 1px solid #1259c3;
+}
+
+.formulario-register fieldset,legend,input,label,div,button {
+    width: 60%;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.fieldset-register input {
+    width: auto;
+}
+
+.formulario-register button {
+    background-color: #1259c3;
+    color: white;
+    border-radius: 10px;
+    width: 60%;
+    border: #1259c3;
+    padding: 0.5%;
+}

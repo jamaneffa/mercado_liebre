@@ -1,0 +1,17 @@
+@import url(header.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(register_form.css);
+@import url(login_form.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.img-banner {
+    width: 100%;
+}

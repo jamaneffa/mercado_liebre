@@ -1,0 +1,143 @@
+main {
+    size: 90vw;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section { 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulares { 
+    display: block;
+    margin: auto;
+    padding: 2% 0;
+    font-size: 1.5rem;
+}
+
+.articulos-main {
+    display: block;
+    margin: auto;
+    padding: 0.5rem;
+    align-self: center;
+}
+
+.div-articulo {
+    display: block;
+    margin: auto;
+    padding: 0 10px;
+    margin-bottom: 0px;
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    width: 100%;
+}
+
+main article i {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    margin: auto;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    padding: 1.5%;
+
+    position: relative;
+    top: -18px;
+    left: 85%;
+}
+
+.articulos-main img {
+    width: 100%;
+    transition: border 1s;
+}
+
+.div-informacion-producto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+}
+
+.div-informacion-producto p {
+    position: relative;
+    top: -50px;
+}
+
+.precios { 
+    display: block;
+    font-size: 18px;
+}
+
+.descuentos { 
+    display: block;
+    margin-left: 10px;
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripciones { 
+    display: none;
+    position: relative;
+    left: 5px;
+    top: -50px;
+    font-size: 16px;
+    color: #666;
+}
+
+.articulos-main img:hover {
+    border: 2px solid #666;
+}
+
+main article i:hover {
+    transform: rotateZ(-90deg);
+    transition-property: transform;
+    transition-duration: 2s;
+}
+
+
+@media (min-width:360px) {
+
+    .articulos-main {
+        width: 50%;
+    }
+}
+
+@media (min-width:780px) {
+
+    .articulos-main {
+        width: 50%;
+    }
+
+    .descripciones {
+        display: block;
+    }
+
+    .descripciones:hover {
+        display: none;
+    }
+}
+
+@media (min-width:1200px) {
+
+    .articulos-main {
+        width: 25%;
+    }
+    .descripciones {
+        display: block;
+    }
+
+    .descripciones:hover {
+        display: none;
+    }
+}
